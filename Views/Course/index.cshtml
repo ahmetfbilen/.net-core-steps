@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Divlerle Manzara</title>
+    <style>
+        /* Genel sayfa ayarları */
+        body {
+            margin: 0;
+            overflow: hidden;
+            /* Kaydırma çubuklarını gizle */
+            background-color: #87CEEB;
+            /* Gökyüzü rengi */
+            position: relative;
+            /* İçindeki öğeleri konumlandırmak için */
+            height: 100vh;
+            /* Tam ekran yüksekliği */
+        }
+
+        /* Zemin */
+        .ground {
+            position: absolute;
+            /* Konumlandırma */
+            bottom: 0;
+            /* Sayfanın en altına */
+            left: 0;
+            width: 100%;
+            /* Tam genişlik */
+            height: 30vh;
+            /* Ekran yüksekliğinin %30'u */
+            background-color: #228B22;
+            /* Yeşil çim rengi */
+        }
+
+        /* Güneş */
+        .sun {
+            position: absolute;
+            /* Konumlandırma */
+            top: 50px;
+            /* Yukarıdan 50px boşluk */
+            right: 50px;
+            /* Sağdan 50px boşluk */
+            width: 100px;
+            /* Genişlik */
+            height: 100px;
+            /* Yükseklik (daire için aynı olmalı) */
+            background-color: #FFD700;
+            /* Altın sarısı rengi */
+            border-radius: 50%;
+            /* Daire şekli verir */
+        }
+
+        /* Basit Ağaç Gövdesi */
+        .tree-trunk {
+            position: absolute;
+            bottom: 30vh;
+            /* Zeminin hemen üstüne */
+            left: 20%;
+            /* Soldan %20 boşluk */
+            width: 30px;
+            /* Gövde genişliği */
+            height: 100px;
+            /* Gövde yüksekliği */
+            background-color: #8B4513;
+            /* Kahverengi */
+            z-index: 1;
+            /* Zeminin üstünde görünmesi için */
+        }
+
+        /* Basit Ağaç Yaprakları (bir daire) */
+        .tree-leaves {
+            position: absolute;
+            bottom: calc(30vh + 90px);
+            /* Gövdenin üstüne gelecek şekilde */
+            left: calc(20% - 35px);
+            /* Gövdenin ortasına gelecek şekilde */
+            width: 100px;
+            /* Yaprak genişliği */
+            height: 100px;
+            /* Yaprak yüksekliği */
+            background-color: #008000;
+            /* Yeşil */
+            border-radius: 50%;
+            /* Daire şekli */
+            z-index: 1;
+            /* Zeminin üstünde görünmesi için */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Gökyüzü body'nin arka plan rengi ile yapıldı -->
+
+    <!-- Zemin div'i -->
+    <div class="ground"></div>
+
+    <!-- Güneş div'i -->
+    <div class="sun"></div>
+
+    <!-- Ağaç div'leri -->
+    <div class="tree-trunk"></div>
+    <div class="tree-leaves"></div>
+
+</body>
+
+</html>
+
+
+</html>
